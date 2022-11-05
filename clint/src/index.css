@@ -1,0 +1,217 @@
+:root {
+  --nav-background-color: rgb(18, 9, 65);
+  --body-background-color: rgba(82, 118, 148, 0.7);
+  /* --body-background-color: rgb(56, 161, 161, 0.7); */
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: aliceblue;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-image: url(./assesst/school\ background.jpg);
+  /* background-color: var(--body-background-color); */
+}
+
+nav {
+  max-width: 100%;
+  height: 3rem;
+  color: wheat;
+  /* background-image: url(./assesst/school\ background.jpg); */
+  background-color: rgb(6, 6, 68);
+}
+nav > ul {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+li {
+  padding: 0.8rem;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+}
+li:hover {
+  background-color: white;
+  text-transform: uppercase;
+  color: black;
+}
+
+.about-school {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  max-width: auto;
+  justify-content: center;
+}
+.about-school > p {
+  max-width: 50rem auto;
+  height: auto;
+  justify-content: center;
+  padding-left: 34%;
+  padding-right: 30%;
+  color: black;
+}
+.user-option2 {
+  margin-left: 2%;
+  margin-bottom: 2rem;
+}
+
+.user-option2 {
+  max-width: 90%;
+  max-height: 60%;
+  margin: 10% 20%;
+  justify-content: center;
+  gap: 2rem;
+  background-color: rgb(56, 161, 161, 0.8);
+}
+.all-in-one {
+  width: 100%;
+  height: auto;
+
+  text-align: center;
+  background-color: var(--body-background-color);
+  position: absolute;
+}
+@media screen and (max-width: 450px) {
+  nav {
+    width: 100%;
+    height: auto;
+  }
+  nav > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 100%;
+    padding: 5%;
+  }
+
+  .user-option2 {
+    max-width: 90%;
+    max-height: 60%;
+    margin: 10% 20%;
+    justify-content: center;
+    gap: 2rem;
+    background-color: rgb(145, 201, 196);
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* registration page */
+.reegistration-form {
+  max-width: 700px;
+  height: auto;
+  margin: 2rem auto;
+  border: 2px solid black;
+  padding: 2rem;
+}
+label,
+select {
+  margin-left: 16%;
+  display: block;
+  text-align: left;
+  padding-bottom: 0.5rem;
+}
+input,
+textarea,
+select {
+  display: block;
+  width: 75%;
+  height: 2rem;
+  color: black;
+  margin-left: 16%;
+  border-radius: 8px;
+  margin-bottom: 1%;
+}
+
+option {
+  color: black;
+}
+.submit-btn {
+  width: 40%;
+  /* margin-top: 3px; */
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  height: 2rem;
+  color: black;
+  margin-left: 5%;
+  padding: 1%;
+  max-width: 20rem;
+}
+.submit-btn:hover {
+  background-color: var(--nav-background-color);
+  color: white;
+}
+table {
+  border-collapse: collapse;
+  width: 96%;
+  min-height: 1em;
+  margin: 2%;
+}
+
+th,
+td {
+  text-align: left;
+  color: black;
+}
+
+tr:nth-child(odd) {
+  background-color: #8fcaca;
+  /* background-color: #d6eeee; */
+}
+.action-btn {
+  /* width: 15%; */
+  margin-top: 3%;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  height: 5%;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  margin-left: 3%;
+  padding: 2%;
+  max-width: 20rem;
+}
+.action-btn:hover {
+  background-color: var(--nav-background-color);
+  color: wheat;
+}
+.registerd-student-view {
+  max-width: 90%;
+  margin: 10%;
+  max-height: 40rem;
+  background-color: rgb(158, 158, 116);
+  color: black;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.toadmin {
+  width: 70%;
+  background-color: var(--nav-background-color);
+  margin-left: 18%;
+}
+.toadmin h3 {
+  color: blue;
+}
+/* .container nav ul a.active {
+  background-color: red;
+} */
+.adminbtn {
+  margin-top: 15%;
+}
+.comment {
+  background-color: bisque;
+}
